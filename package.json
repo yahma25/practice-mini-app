@@ -1,0 +1,31 @@
+{
+  "name": "practice-vanilla-javascript",
+  "version": "1.0.0",
+  "description": "Practice vanulla javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yahma25/practice-vanilla-javascript.git"
+  },
+  "author": "mhkim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yahma25/practice-vanilla-javascript/issues"
+  },
+  "homepage": "https://github.com/yahma25/practice-vanilla-javascript#readme",
+  "lint-staged": {
+    "*.js": ["eslint . --fix", "prettier --write"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "husky": "^4.3.0",
+    "lint-staged": "^10.5.2"
+  }
+}
